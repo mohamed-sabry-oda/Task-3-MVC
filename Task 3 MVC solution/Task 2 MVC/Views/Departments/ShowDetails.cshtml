@@ -1,0 +1,25 @@
+﻿@model Departments
+@{
+    ViewData["Title"] = "ShowDetails";
+}
+
+<table class="table table-bordered table-hover">
+    <tr class="Head">
+        <th>Name</th>
+        <th>Manager Name</th>
+    </tr>
+
+    <tr class="Body">
+        <th>@Model.Name</th>
+        <th>@Model.MgrName</th>
+    </tr>
+</table>
+
+<style>
+    .Head{
+        background-color: aliceblue;
+    }
+    .Body{
+        background-color: cornsilk;
+    }
+</style>

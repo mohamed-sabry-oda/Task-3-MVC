@@ -1,0 +1,16 @@
+﻿@model Departments
+@{
+    ViewData["Title"] = "AddDept";
+}
+
+<form class="form-control" action="/Departments/SaveAdd">
+<lable for="username">Name</lable>
+<input id="username" class="form-control"type="text" name="Name" value="@Model?.Name"/>
+<lable for="Mgrname">Manager Name</lable>
+<input id="Mgrname" class="form-control"type="text" name="MgrName" value="@Model?.MgrName"/>
+
+
+<input type="submit" value="Add" />
+</form>
+
+<a href="/Departments/ShowAll">Back</a>
